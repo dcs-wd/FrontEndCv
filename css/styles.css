@@ -1,0 +1,17 @@
+@font-face {
+  src: url("../fonts/Jaapokkienchance-Regular.otf");
+  font-family: Enchance-Regular;
+}
+@font-face {
+  src: url("../fonts/Jaapokki-Regular.otf");
+  font-family: Jaapokki-Regular;
+}
+@font-face {
+  src: url("../fonts/Jaapokkisubtract-Regular.otf");
+  font-family: Subtract-Regular;
+}
+
+html,
+body {
+  margin: 0;
+}
