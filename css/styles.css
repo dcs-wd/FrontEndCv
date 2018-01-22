@@ -91,6 +91,94 @@ body {
   max-width: 50%;
 }
 
+.knowledge {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.knowledge > .knowledge-item {
+  max-width: 25%;
+}
+
+.knowledge-item > .knowledge__studies > .flip,
+.knowledge-item > .knowledge__courses > .flip,
+.knowledge-item > .knowledge__proyects > .flip {
+  position: relative;
+}
+
+.knowledge-item > .knowledge__studies > .flip > .knowledge__studies-item,
+.knowledge-item > .knowledge__courses > .flip > .knowledge__courses-item,
+.knowledge-item > .knowledge__proyects > .flip > .knowledge__proyects-item {
+  background-color: #1de9b6;
+  text-align: center;
+  font-size: 5em;
+  margin-bottom: 2vh;
+  padding: 100px 0;
+  width: 100%;
+  border-radius: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 1s;
+}
+
+.knowledge-item
+  > .knowledge__studies
+  > .flip
+  > .knowledge__studies-item
+  > .flip__knowledge__studies-item--back,
+.knowledge-item
+  > .knowledge__courses
+  > .flip
+  > .knowledge__courses-item
+  > .flip__knowledge__courses-item--back,
+.knowledge-item
+  > .knowledge__proyects
+  > .flip
+  > .knowledge__proyects-item
+  > .flip__knowledge__proyects-item--back {
+  transform: rotateY(-180deg);
+}
+
+.knowledge-item
+  > .knowledge__studies
+  > .flip
+  > .knowledge__studies-item:hover
+  > .flip__knowledge__studies-item--front,
+.knowledge-item
+  > .knowledge__courses
+  > .flip
+  > .knowledge__courses-item:hover
+  > .flip__knowledge__courses-item--front,
+.knowledge-item
+  > .knowledge__proyects
+  > .flip
+  > .knowledge__proyects-item:hover
+  > .flip__knowledge__proyects-item--front {
+  transform: rotateY(-180deg);
+}
+
+.knowledge-item
+  > .knowledge__studies
+  > .flip
+  > .knowledge__studies-item:hover
+  > .flip__knowledge__studies-item--back,
+.knowledge-item
+  > .knowledge__courses
+  > .flip
+  > .knowledge__courses-item:hover
+  > .flip__knowledge__courses-item--back,
+.knowledge-item
+  > .knowledge__proyects
+  > .flip
+  > .knowledge__proyects-item:hover
+  > .flip__knowledge__proyects-item--back {
+  transform: rotateY(0);
+}
+
 .footer {
   align-items: center;
   justify-content: center;
