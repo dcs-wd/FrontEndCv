@@ -16,6 +16,53 @@ body {
   margin: 0;
 }
 
+.ir-arriba .fa {
+  padding: 20px;
+  font-size: 18px;
+}
+
+.ir-arriba {
+  display: none;
+  background: #1de9b6;
+  color: #fff;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  z-index: 10000;
+}
+
+.header {
+  height: 100vh;
+  /* background-image: url(../images/pexels-photo-436784.jpeg); */
+  background-image: url(../images/pexels-photo-326424.jpeg);
+  background-size: cover;
+}
+
+.header > .header__left {
+  height: 100vh;
+  width: 25%;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.header > .header__down {
+  width: 100%;
+  margin-top: -11vh;
+  font-size: 2.5em;
+  display: flex;
+  justify-content: center;
+}
+
+.header > .header__down i {
+  padding: 5px;
+  border-radius: 100%;
+  border: 5px solid antiquewhite;
+  background-color: rgba(250, 235, 215, 0.5);
+}
+
 .clearfix:after {
   content: " "; /* Older browser do not support empty content */
   visibility: hidden;
@@ -30,18 +77,27 @@ body {
   max-width: 1200px;
 }
 
-.ir-arriba {
-  display: none;
-  background: #1de9b6;
-  color: #fff;
-  cursor: pointer;
-  position: fixed;
-  bottom: 20px;
-  right: 15px;
-  z-index: 10000;
+.section-container {
+  padding: 50px 0;
 }
 
-.ir-arriba .fa {
-  padding: 20px;
-  font-size: 18px;
+.about-me > .about-me__image {
+  float: left;
+  max-width: 50%;
+}
+
+.about-me > .about-me__info {
+  float: right;
+  max-width: 50%;
+}
+
+.footer {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  font-family: Jaapokki-Regular;
+  padding: 5px 0;
+  background-color: #333;
+  color: #fff;
 }
