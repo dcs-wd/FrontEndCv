@@ -54,6 +54,8 @@ body {
   font-size: 2.5em;
   display: flex;
   justify-content: center;
+  z-index: 10000;
+  cursor: pointer;
 }
 
 .header > .header__down i {
@@ -104,25 +106,15 @@ body {
   max-width: 25%;
 }
 
-.knowledge-item > .knowledge__studies > .flip,
-.knowledge-item > .knowledge__courses > .flip,
-.knowledge-item > .knowledge__proyects > .flip {
-  position: relative;
-}
-
-.knowledge-item > .knowledge__studies > .flip > .knowledge__studies-item,
-.knowledge-item > .knowledge__courses > .flip > .knowledge__courses-item,
-.knowledge-item > .knowledge__proyects > .flip > .knowledge__proyects-item {
+.knowledge-item > .knowledge__studies > .knowledge__studies-item,
+.knowledge-item > .knowledge__courses > .knowledge__courses-item,
+.knowledge-item > .knowledge__proyects > .knowledge__proyects-item {
   background-color: #1de9b6;
   text-align: center;
-  font-size: 5em;
+  font-size: 3em;
   margin-bottom: 2vh;
-  padding: 100px 0;
+  padding: 6vh 0;
   width: 100%;
-  border-radius: 100%;
-  position: absolute;
-  backface-visibility: hidden;
-  transition: transform 1s;
 }
 
 .knowledge-item
@@ -177,6 +169,21 @@ body {
   > .knowledge__proyects-item:hover
   > .flip__knowledge__proyects-item--back {
   transform: rotateY(0);
+}
+
+/* Style inputs with type="text", select elements and textareas */
+.form__contact > .form-row > input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 .footer {

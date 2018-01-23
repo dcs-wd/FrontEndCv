@@ -26,9 +26,7 @@
             </p>
         </div>
         <div class="header__down">
-            <a href="#" style="color:antiquewhite">
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </a>
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
         </div>
     </header>
     <section style="background-color:aquamarine;" class="section-container">
@@ -56,18 +54,13 @@
             </div>
         </div>
     </section>
-    <section class="section-container">
+    <section class="section-container" style="position: relative">
         <div class="container clearfix">
             <ul class="knowledge">
                 <li class="knowledge-item">
                     <div class="knowledge__studies">
-                        <div class="flip">
-                            <div class="knowledge__studies-item flip__knowledge__studies-item--front">
-                                <i class="fa fa-code-fork" aria-hidden="true"></i>
-                            </div>
-                            <div class="knowledge__studies-item flip__knowledge__studies-item--back">
-                                Studies
-                            </div>
+                        <div class="knowledge__studies-item flip__knowledge__studies-item--front">
+                            <i class="fa fa-code-fork" aria-hidden="true"></i>
                         </div>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae veritatis ut rem qui distinctio dignissimos, pariatur nisi
                         fugit harum voluptas modi deleniti velit dolor vel accusamus nostrum reiciendis facere? Vero.
@@ -75,13 +68,8 @@
                 </li>
                 <li class="knowledge-item">
                     <div class="knowledge__courses">
-                        <div class="flip">
-                            <div class="knowledge__courses-item flip__knowledge__courses-item--front">
-                                <i class="fa fa-code" aria-hidden="true"></i>
-                            </div>
-                            <div class="knowledge__courses-item flip__knowledge__courses-item--back">
-                                Courses
-                            </div>
+                        <div class="knowledge__courses-item flip__knowledge__courses-item--front">
+                            <i class="fa fa-code" aria-hidden="true"></i>
                         </div>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae veritatis ut rem qui distinctio dignissimos, pariatur nisi
                         fugit harum voluptas modi deleniti velit dolor vel accusamus nostrum reiciendis facere? Vero.
@@ -89,13 +77,8 @@
                 </li>
                 <li class="knowledge-item">
                     <div class="knowledge__proyects">
-                        <div class="flip">
-                            <div class="knowledge__proyects-item flip__knowledge__proyects-item--front">
-                                <i class="fa fa-terminal" aria-hidden="true"></i>
-                            </div>
-                            <div class="knowledge__proyects-item flip__knowledge__proyects-item--back">
-                                Proyects
-                            </div>
+                        <div class="knowledge__proyects-item flip__knowledge__proyects-item--front">
+                            <i class="fa fa-terminal" aria-hidden="true"></i>
                         </div>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae veritatis ut rem qui distinctio dignissimos, pariatur nisi
                         fugit harum voluptas modi deleniti velit dolor vel accusamus nostrum reiciendis facere? Vero.
@@ -116,7 +99,7 @@
     <section style="background-color:gray; height: 150px;" class="section-container"></section>
     <section style="background-color:darkseagreen;" class="section-container">
         <div class="container">
-            <form name="contact" method="get">
+            <form name="contact" method="get" class="form__contact">
                 <div class="form-row">
                     <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
                     <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required>
@@ -129,14 +112,14 @@
                 </div>
                 <div class="form-row">
                     <label for="Label1">Label1</label>
-                    <input type="radio" id="Label1" name="Label1" value="1" required>
+                    <input type="radio" id="Label1" name="radioName" value="1" required>
                     <label for="Label2">Label2</label>
-                    <input type="radio" id="Label2" name="Label2" value="2" required>
+                    <input type="radio" id="Label2" name="radioName" value="2" required>
                     <label for="Label3">Label3</label>
-                    <input type="radio" id="Label3" name="Label3" value="3" required>
+                    <input type="radio" id="Label3" name="radioName" value="3" required>
                     <label for="LabelOthers">Others</label>
-                    <input type="radio" id="LabelOthers" name="LabelOthers" value="Others" required>
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                    <input type="radio" id="LabelOthers" name="radioName" value="Others" required>
+                    <input type="text" name="nombre" id="nombre" placeholder="Others" required hidden>
                 </div>
                 <div class="form-row">
                     <textarea name="" id="" cols="30" rows="10"></textarea>
