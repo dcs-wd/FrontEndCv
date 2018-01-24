@@ -111,6 +111,19 @@ body {
   max-width: 25%;
 }
 
+.knowledge-item > .knowledge__studies > .knowledge__studies-item {
+  background-image: url(../images/fake-daylight-gobo-praca-notes-73988.jpeg);
+  background-size: cover;
+}
+.knowledge-item > .knowledge__courses > .knowledge__courses-item {
+  background-image: url(../images/pexels-photo-270348.jpeg);
+  background-size: cover;
+}
+.knowledge-item > .knowledge__proyects > .knowledge__proyects-item {
+  background-image: url(../images/pexels-photo-373892.jpeg);
+  background-size: cover;
+}
+
 .knowledge-item > .knowledge__studies > .knowledge__studies-item,
 .knowledge-item > .knowledge__courses > .knowledge__courses-item,
 .knowledge-item > .knowledge__proyects > .knowledge__proyects-item {
@@ -176,6 +189,12 @@ body {
   transform: rotateY(0);
 }
 
+.works__timeline-background__img {
+  background-color: rgba(37, 48, 59, 0.2);
+  background-image: url(../images/pexels-photo-373892.jpeg);
+  background-size: cover;
+}
+
 .works__timeline {
   width: 80%;
   max-width: 1200px;
@@ -211,7 +230,6 @@ body {
   width: 40%;
   float: left;
   margin: 5px 0 0 0;
-  border-radius: 6px;
 }
 
 .works__timeline > .works__timeline-item > .item-content > .date {
@@ -254,7 +272,6 @@ body {
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: -1px;
-  border-radius: 6px 6px 0 0;
   position: relative;
 }
 
@@ -274,7 +291,6 @@ body {
   font-size: 14px;
   background: #fff;
   color: #656565;
-  border-radius: 0 0 6px 6px;
 }
 
 .works__timeline > .works__timeline-item:nth-child(even) > .item-content {
