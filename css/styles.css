@@ -83,6 +83,10 @@ body {
   padding: 50px 0;
 }
 
+.dark-theme__section {
+  background-color: #25303b;
+}
+
 .about-me > .about-me__image {
   float: left;
   max-width: 50%;
@@ -100,6 +104,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .knowledge > .knowledge-item {
@@ -171,19 +176,152 @@ body {
   transform: rotateY(0);
 }
 
-/* Style inputs with type="text", select elements and textareas */
-.form__contact > .form-row > input[type="text"],
-input[type="email"],
-select,
-textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+.works__timeline {
+  width: 80%;
+  max-width: 1200px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.works__timeline:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin: 0 0 0 -1px;
+  width: 2px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2); /* Línea vertical */
+}
+
+.works__timeline > .works__timeline-item {
+  width: 100%;
+  margin: 0 0 20px 0;
+  position: relative;
+}
+
+.works__timeline > .works__timeline-item:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.works__timeline > .works__timeline-item > .item-content {
+  width: 40%;
+  float: left;
+  margin: 5px 0 0 0;
+  border-radius: 6px;
+}
+
+.works__timeline > .works__timeline-item > .item-content > .date {
+  display: block;
+  width: 60px;
+  height: 50px;
+  padding: 5px 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin: 0 0 0 -32px;
+  border-radius: 100%;
+  font-size: 12px;
+  font-weight: 900;
+  font-family: Subtract-Regular;
+  text-transform: uppercase;
+  background-color: #25303b;
+  color: rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 0 7px #25303b;
+}
+
+.works__timeline > .works__timeline-item > .item-content > .date > .year {
+  font-size: 18px;
+  display: block;
+  text-align: center;
+}
+
+.works__timeline > .works__timeline-item > .item-content > .date > .month {
+  font-size: 10px;
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.works__timeline > .works__timeline-item > .item-content > h2 {
+  padding: 15px;
+  margin: 0;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  border-radius: 6px 6px 0 0;
+  position: relative;
+}
+
+.works__timeline > .works__timeline-item > .item-content > h2:after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: -5px;
+  width: 10px;
+  height: 10px;
+  -webkit-transform: rotate(-45deg);
+}
+
+.works__timeline > .works__timeline-item > .item-content > p {
+  padding: 15px;
+  margin: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #656565;
+  border-radius: 0 0 6px 6px;
+}
+
+.works__timeline > .works__timeline-item:nth-child(even) > .item-content {
+  float: right;
+}
+
+.works__timeline
+  > .works__timeline-item:nth-child(even)
+  > .item-content
+  > h2:after {
+  left: -5px;
+}
+
+.works__timeline > .works__timeline-item:nth-child(odd) > .item-content > h2 {
+  background: #e74c3c;
+}
+
+.works__timeline
+  > .works__timeline-item:nth-child(odd)
+  > .item-content
+  > h2:after {
+  background: #e74c3c;
+}
+
+.works__timeline > .works__timeline-item:nth-child(even) > .item-content > h2 {
+  background: #2ecc71;
+}
+
+.works__timeline
+  > .works__timeline-item:nth-child(even)
+  > .item-content
+  > h2:after {
+  background: #2ecc71;
+}
+
+.works__timeline
+  > .works__timeline-item:nth-child(2n + 3)
+  > .item-content
+  > h2 {
+  background: #e67e22;
+}
+
+.works__timeline
+  > .works__timeline-item:nth-child(2n + 3)
+  > .item-content
+  > h2:after {
+  background: #e67e22;
 }
 
 .footer {

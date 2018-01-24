@@ -8,6 +8,7 @@
     <title>DC | Full-Stack web develloper</title>
 
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./dist/font-awesome/css/font-awesome.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -29,7 +30,7 @@
             <i class="fa fa-chevron-down" aria-hidden="true"></i>
         </div>
     </header>
-    <section style="background-color:aquamarine;" class="section-container">
+    <section class="section-container">
         <div class="about-me container clearfix">
             <div class="about-me__image">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis pariatur possimus sapiente dicta laudantium aliquid et
@@ -54,7 +55,7 @@
             </div>
         </div>
     </section>
-    <section class="section-container" style="position: relative">
+    <section class="section-container dark-theme__section">
         <div class="container clearfix">
             <ul class="knowledge">
                 <li class="knowledge-item">
@@ -87,42 +88,86 @@
             </ul>
         </div>
     </section>
-    <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, optio! Fuga, optio? Animi, in nisi exercitationem natus fugit
-        veniam, porro quo sequi deleniti deserunt blanditiis iure laboriosam, rerum voluptatem a?
-    </div>
-    <section style="background-color:red; height: 150px;" class="section-container"></section>
+
+    <section class="section-container dark-theme__section">
+        <div class="works__timeline">
+            <div class="works__timeline-item">
+                <div class="item-content">
+                    <span class="date">
+                        <span class="month">Jan</span>
+                        <span class="year">2014</span>
+                    </span>
+                    <h2>2017</h2>
+                    <p>Lorem ipsum..</p>
+                </div>
+            </div>
+            <div class="works__timeline-item">
+                <div class="item-content">
+                    <span class="date">
+                        <span class="month">Jan</span>
+                        <span class="year">2015</span>
+                    </span>
+                    <h2>2016</h2>
+                    <p>Lorem ipsum..</p>
+                </div>
+            </div>
+            <div class="works__timeline-item">
+                <div class="item-content">
+                    <span class="date">
+                        <span class="month">Jan</span>
+                        <span class="year">2015</span>
+                    </span>
+                    <h2>2016</h2>
+                    <p>Lorem ipsum..</p>
+                </div>
+            </div>
+            <div class="works__timeline-item">
+                <div class="item-content">
+                    <span class="date">
+                        <span class="month">Jan</span>
+                        <span class="year">2015</span>
+                    </span>
+                    <h2>2016</h2>
+                    <p>Lorem ipsum..</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <div>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor temporibus laboriosam a error. Facere dolores, totam, iste
         unde corporis labore enim ipsum dolore harum, numquam consequatur beatae ut et nihil.
     </div>
     <section style="background-color:gray; height: 150px;" class="section-container"></section>
-    <section style="background-color:darkseagreen;" class="section-container">
+    <section class="section-container">
         <div class="container">
             <form name="contact" method="get" class="form__contact">
-                <div class="form-row">
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
-                    <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required>
+                <div class="form-col">
+                    <div class="form-row">
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                        <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="email" id="email" name="email" placeholder="name@company.com">
+                    </div>
+                    <div class="form-row">
+                        <input type="text" name="telf" id="telf" placeholder="Teléfono" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="Label1">Label1</label>
+                        <input type="radio" id="Label1" name="radioName" value="1" required>
+                        <label for="Label2">Label2</label>
+                        <input type="radio" id="Label2" name="radioName" value="2" required>
+                        <label for="Label3">Label3</label>
+                        <input type="radio" id="Label3" name="radioName" value="3" required>
+                        <label for="LabelOthers">Others</label>
+                        <input type="radio" id="LabelOthers" name="radioName" value="Others" required>
+                        <input type="text" name="nombre" id="nombre" placeholder="Others" required hidden>
+                    </div>
                 </div>
-                <div class="form-row">
-                    <input type="email" id="email" name="email" placeholder="name@company.com">
-                </div>
-                <div class="form-row">
-                    <input type="text" name="telf" id="telf" placeholder="Teléfono" required>
-                </div>
-                <div class="form-row">
-                    <label for="Label1">Label1</label>
-                    <input type="radio" id="Label1" name="radioName" value="1" required>
-                    <label for="Label2">Label2</label>
-                    <input type="radio" id="Label2" name="radioName" value="2" required>
-                    <label for="Label3">Label3</label>
-                    <input type="radio" id="Label3" name="radioName" value="3" required>
-                    <label for="LabelOthers">Others</label>
-                    <input type="radio" id="LabelOthers" name="radioName" value="Others" required>
-                    <input type="text" name="nombre" id="nombre" placeholder="Others" required hidden>
-                </div>
-                <div class="form-row">
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                <div class="form-col">
+                    <div class="form-row">
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
                 </div>
                 <div class="form-row">
                     <button type="submit" id="enviar">Enviar</button>
