@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Coustard");
+@import url("https://fonts.googleapis.com/css?family=Coiny");
+
 @font-face {
   src: url("../fonts/Jaapokkienchance-Regular.otf");
   font-family: Enchance-Regular;
@@ -187,6 +190,58 @@ body {
   > .knowledge__proyects-item:hover
   > .flip__knowledge__proyects-item--back {
   transform: rotateY(0);
+}
+
+.section__breaker {
+  background-image: url(../images/50-opacity-pexels-photo-380769.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section__breaker > .section__breaker-container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 50px 0;
+}
+
+.section__breaker > .section__breaker-container > .section__breaker-item {
+  border: 5px solid #1de9b6;
+  padding: 25px;
+}
+
+.section__breaker-item > blockquote {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.45;
+  padding: 4px 0 0 25px;
+  position: relative;
+  color: #383838;
+}
+
+.section__breaker-item > blockquote:before {
+  display: block;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  color: #7a7a7a;
+}
+
+.section__breaker-item > blockquote cite {
+  color: #999999;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+  text-align: right;
+}
+
+.section__breaker-item > blockquote cite:before {
+  content: "\2014 \2009";
 }
 
 .works__timeline-background__img {
