@@ -1,19 +1,60 @@
 .form__contact {
   background-color: #fff;
   padding: 25px;
-  display: flex;
 }
 
-.form__contact > .form-row > input[type="text"],
-input[type="email"],
-select,
-textarea {
+.form__contact > .form-col {
+  display: flex;
+  justify-content: center;
+}
+
+.form__contact > .form-col > .form-col__left,
+.form__contact > .form-col > .form-col__right {
+  padding: 15px;
+  width: 100%;
+}
+
+.form__contact > .form-col > .form-col__left > .form-row > input[type="text"],
+input[type="email"] {
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */
   border: 1px solid #ccc; /* Gray border */
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
   resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.form__contact > .form-col > .form-col__right > .form-row > textarea {
+  height: 100%;
+  width: 100%;
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.form__contact > .form-row__button {
+  display: flex;
+  justify-content: center;
+}
+
+.form__contact > .form-row__button > .form-button {
+  color: #fff;
+  background-color: #13a38d;
+  font-family: Subtract-Regular;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 0;
+  border: 0;
+  font-size: 18px;
+  padding: 20px 50px;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+.form__contact > .form-row__button > .form-button > .reverse__font {
+  font-family: Enchance-Regular;
 }
