@@ -99,7 +99,8 @@ body {
 }
 
 .navbar > .navbar__container > .navbar__list > .navbar__item--active a {
-  height: 50px;
+  border-bottom: 5px solid #1cd4c6;
+  padding-bottom: 5px;
 }
 
 .navbar > .navbar__container > .navbar__list > .navbar__item a:hover {
