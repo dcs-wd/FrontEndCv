@@ -18,10 +18,6 @@
   src: url("../fonts/Montserrat-Light.otf");
   font-family: Montserrat-Light;
 }
-@font-face {
-  src: url("../fonts/Montserrat-Bold.otf");
-  font-family: Montserrat-Bold;
-}
 
 html,
 body {
@@ -162,14 +158,14 @@ body {
 .section-container .section__title {
   border-bottom: 2px solid #25303b;
   padding-left: 15px;
-  font-family: Jaapokki-Regular;
+  font-family: Montserrat;
 }
 
 .section-container .light-section__title {
   border-bottom: 2px solid #fff;
   color: #f7f7f7;
   padding-left: 15px;
-  font-family: Jaapokki-Regular;
+  font-family: Montserrat;
 }
 
 .dark-theme__section {

@@ -18,6 +18,18 @@
   color: #fff;
 }
 
+.form__contact > .form-col > .form-col__left > .form-row > input[type="radio"] {
+  margin-right: 30px;
+}
+
+.form__contact
+  > .form-col
+  > .form-col__left
+  > .form-row
+  > input[type="radio"]:last-child {
+  margin-right: 0;
+}
+
 .form__contact > .form-col > .form-col__left > .form-row > input[type="text"],
 input[type="email"] {
   width: 100%;
@@ -36,6 +48,10 @@ input[type="email"] {
   border-left-style: none;
   box-shadow: 0em 0em 0em 0em transparent inset;
   border-radius: 0;
+}
+
+.form__contact > .form-col > .form-col__left > .form-row:last-child {
+  margin-top: 15px;
 }
 
 .form__contact > .form-col > .form-col__right > .form-row > textarea {
