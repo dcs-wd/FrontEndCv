@@ -16,6 +16,15 @@ $(document).ready(function() {
       $(".ir-arriba").slideUp(300);
     }
   });
+
+  $(".logo-arriba").click(function() {
+    $("body, html").animate(
+      {
+        scrollTop: "0px"
+      },
+      1000
+    );
+  });
 });
 
 var navbarItems = document.getElementsByClassName("navbar__item");

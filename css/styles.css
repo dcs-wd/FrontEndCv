@@ -50,6 +50,9 @@ body {
   background-color: #f7f7f7;
 }
 
+.navbar .logo-arriba {
+  cursor: pointer;
+}
 .navbar .navbar__logo {
   width: 3.5vw;
   padding: 5px 5px 5px 50px;
