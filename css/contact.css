@@ -88,6 +88,10 @@ input[type="email"] {
   margin-top: 25px;
 }
 
+.form__contact > .form-row__button > .form-button:hover {
+  background-color: #1ad3b4;
+}
+
 .form__contact > .form-row__button > .form-button > .reverse__font {
   font-family: Enchance-Regular;
 }

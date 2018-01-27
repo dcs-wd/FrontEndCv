@@ -3,14 +3,15 @@ var form = document.getElementsByName("contacto")[0];
 var nombreInput = document.getElementById("nombre");
 var apellidosInput = document.getElementById("apellidos");
 var emailInput = document.getElementById("email");
-var ejercitoInput = document.getElementById("ejercito");
-var fechaInput = document.getElementById("fecha");
+var ejercitoInput = document.getElementById("telf");
+var fechaInput = document.getElementById("comtentario");
 var submitButton = document.getElementById("enviar");
 
-var misionInput = {
-  misions1: document.getElementById("tipo_mision_1"),
-  misions2: document.getElementById("tipo_mision_2"),
-  misions3: document.getElementById("tipo_mision_3")
+var radioInput = {
+  radio1: document.getElementById("Label1"),
+  radio1: document.getElementById("Label2"),
+  radio1: document.getElementById("Label3"),
+  radio1: document.getElementById("LabelOthers")
 };
 
 form.addEventListener("submit", function(event) {
