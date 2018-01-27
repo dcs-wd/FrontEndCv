@@ -35,6 +35,67 @@ body {
   z-index: 10000;
 }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  height: 50px;
+  background-color: #f7f7f7;
+}
+
+.navbar .navbar__logo {
+  width: 3.5vw;
+  padding: 5px 5px 5px 50px;
+  margin: 0 auto;
+  float: left;
+}
+
+.navbar > .navbar__container {
+  max-width: 1200px;
+  float: right;
+  margin-right: 50px;
+}
+
+.navbar > .navbar__container > .navbar__list {
+  list-style-type: none;
+  margin: 0;
+  font-size: 0;
+}
+
+.navbar > .navbar__container > .navbar__list > .navbar__item {
+  display: inline-block;
+  font-size: 1rem;
+  height: 50px;
+}
+
+.navbar > .navbar__container > .navbar__list > .navbar__item a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 20px;
+  color: #1cd4c6;
+  transition: all 0.5s linear;
+  font-family: Enchance-Regular;
+  text-transform: uppercase;
+}
+
+.navbar
+  > .navbar__container
+  > .navbar__list
+  > .navbar__item
+  a
+  > .reverse__font {
+  font-family: Subtract-Regular;
+}
+
+.navbar > .navbar__container > .navbar__list > .navbar__item--active a {
+  height: 50px;
+}
+
+.navbar > .navbar__container > .navbar__list > .navbar__item a:hover {
+  height: 50px;
+}
+
 .header {
   height: 100vh;
   /* background-image: url(../images/pexels-photo-436784.jpeg); */
@@ -84,6 +145,15 @@ body {
 
 .section-container {
   padding: 50px 0;
+}
+
+.section-container .section__title {
+  border-bottom: 2px solid #25303b;
+}
+
+.section-container .light-section__title {
+  border-bottom: 2px solid #fff;
+  color: #f7f7f7;
 }
 
 .dark-theme__section {
@@ -393,6 +463,100 @@ body {
   > .item-content
   > h2:after {
   background: #e67e22;
+}
+
+.skills > .skills-col {
+  display: flex;
+  justify-content: center;
+}
+
+.skills > .skills-col > .skills-col__left,
+.skills > .skills-col > .skills-col__right {
+  padding: 15px;
+  width: 100%;
+}
+
+.skills > .skills-col .skills__item {
+  width: 100%;
+  background-color: #ddd;
+  margin: 20px 0;
+}
+
+.skills > .skills-col .skills__bar {
+  text-align: left;
+  padding-left: 20px;
+  line-height: 40px;
+  color: white;
+}
+
+.skills > .skills-col .skills__item > .html {
+  width: 90%;
+  background-color: #00d172;
+}
+
+.skills > .skills-col .skills__item > .php {
+  width: 80%;
+  background-color: #777bb4;
+}
+
+.skills > .skills-col .skills__item > .db {
+  width: 70%;
+  background-color: #a33639;
+}
+
+.skills > .skills-col .skills__item > .bootstrap {
+  width: 70%;
+  background-color: #614789;
+}
+
+.skills > .skills-col .skills__item > .scrum {
+  width: 70%;
+  background-color: #6db74d;
+}
+
+.skills > .skills-col .skills__item > .git {
+  width: 70%;
+  background-color: #f54d27;
+}
+
+.skills > .skills-col .skills__item > .devops {
+  width: 70%;
+  background-color: #0d2c40;
+}
+
+.skills > .skills-col .skills__item > .angular {
+  width: 70%;
+  background-color: #dd0031;
+}
+
+.skills > .skills-col .skills__item > .node {
+  width: 70%;
+  background-color: #83cd29;
+}
+
+.skills > .skills-col .skills__item > .react {
+  width: 70%;
+  background-color: #53c1de;
+}
+
+.skills > .skills-col .skills__item > .cms {
+  width: 70%;
+  background-color: #464646;
+}
+
+.skills > .skills-col .skills__item > .teamwork {
+  width: 70%;
+  background-color: #1cd4c6;
+}
+
+.skills > .skills-col .skills__item > .design {
+  width: 70%;
+  background-color: #fed136;
+}
+
+.skills > .skills-col .skills__item > .oop {
+  width: 70%;
+  background-color: #1f6385;
 }
 
 .footer {

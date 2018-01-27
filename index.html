@@ -1,10 +1,12 @@
 <DOCTYPE html>
-    <html lang="en">
+    <html lang="es">
 
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link rel="icon" type="image/png" href="./images/icon.png">
         <title>DC | Full-Stack web develloper</title>
 
         <link rel="stylesheet" href="./css/styles.css">
@@ -18,45 +20,57 @@
         <span class="ir-arriba">
             <i class="fa fa-chevron-up"></i>
         </span>
-        <nav></nav>
+        <nav class="navbar">
+            <a href="#page-top">
+                <img src="./images/logo.png" alt="logoDcMenu" class="navbar__logo">
+            </a>
+            <div class="navbar__container">
+                <ul class="navbar__list">
+                    <li class="navbar__item ">
+                        <a href="#quien-soy">Quien soy</a>
+                    </li>
+                    <li class="navbar__item ">
+                        <a href="#estudios">Estudios</a>
+                    </li>
+                    <li class="navbar__item ">
+                        <a href="#experiencia">Expe
+                            <span class="reverse__font">r</span>iencia</a>
+                    </li>
+                    <li class="navbar__item ">
+                        <a href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="navbar__item ">
+                        <a href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <header class="header">
-            <div style="background-color:antiquewhite;" class="header__left">
+            <div class="header__left">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ipsum perferendis quos quibusdam expedita
                     blanditiis saepe repellat perspiciatis, sunt, enim adipisci? Illo sunt assumenda accusantium voluptatum
                     quas sit officia eos.
                 </p>
             </div>
-            <div class="header__down">
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </div>
         </header>
-        <section class="section-container">
+        <section id="quien-soy" class="section-container">
             <div class="about-me container clearfix">
+                <h2 class="section__title">Sobre mi</h2>
                 <div class="about-me__image">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis pariatur possimus sapiente dicta laudantium aliquid et
-                    odio ad, voluptatum porro magni veritatis in perferendis nulla. Atque inventore autem ut facere.
+                    <img src="./images/logo.png" alt="logoDcAbout">
                 </div>
                 <div class="about-me__info">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam cum modi error ducimus voluptate quisquam, ad, sed asperiores
-                    minus natus atque reiciendis facilis? Consectetur numquam modi omnis sapiente voluptates sequi? Aliquid,
-                    unde in. Facere aliquam quis aliquid nihil voluptas. Quisquam ipsa omnis laborum cupiditate harum distinctio
-                    eum, velit sequi quia, modi aperiam error accusantium repellendus enim laboriosam iusto tempora optio.
-                    Nemo dignissimos nobis consequuntur recusandae reprehenderit ipsam nesciunt vel accusamus. Accusamus
-                    vitae quod quisquam nam eligendi soluta, non, consequatur consequuntur nesciunt fuga consectetur rerum
-                    totam blanditiis ullam ad. Eum, obcaecati. Eius quasi tempora quae numquam amet quia doloremque tenetur,
-                    deleniti corrupti distinctio mollitia! Perferendis esse atque facere error, at ea incidunt, neque deleniti,
-                    nihil similique ratione earum praesentium amet fugit? Quasi nulla voluptatem ipsa dolor amet, inventore
-                    optio saepe explicabo esse ipsum voluptates. Fugit ab voluptatibus voluptates omnis at ipsa blanditiis
-                    rem error quod ad sed, minus impedit eveniet dolor. Quisquam illo id obcaecati deserunt iusto. Ipsa animi
-                    officia, veniam dolorum non est neque quaerat voluptatum totam facere fuga incidunt laudantium blanditiis
-                    esse tempora. Iusto aspernatur maiores recusandae deleniti dolore? Nihil illo perferendis aliquid eaque
-                    cumque, facere repellat ipsam hic tenetur possimus dicta? Veritatis, quisquam culpa? Porro a illum, eligendi
-                    eaque minus, placeat facere minima ex molestias quas ad fugiat.
+                    <p>Con más de 3 años de experiencia en diseño y desarrollo web. Mi definición es la siguiente.</p>
+                    <p>Creativo, arriesgado, híbrido entre desarrollador y diseñador</p>
+                    <p>Con ganas de afrontar nuevos proyectos, desenvolviéndome en el terreno web (Front-End y Back-End) para
+                        construirme poco a poco como Full-Stack web developer. Dispuesto a mezclar mis conocimientos, mis
+                        habilidades y las herramientas necesarias para aportar mi creatividad multimedia a los proyectos.</p>
                 </div>
             </div>
         </section>
-        <section class="section-container dark-theme__section">
+        <section id="estudios" class="section-container dark-theme__section">
             <div class="container clearfix">
+                <h2 class="light-section__title">Mis conocimientos</h2>
                 <ul class="knowledge">
                     <li class="knowledge-item">
                         <div class="knowledge__studies">
@@ -101,7 +115,8 @@
                 </div>
             </div>
         </div>
-        <section class="section-container dark-theme__section">
+        <section id="experiencia" class="section-container dark-theme__section">
+            <h2 class="container light-section__title">Experiencia</h2>
             <div class="works__timeline">
                 <div class="works__timeline-item">
                     <div class="item-content">
@@ -145,13 +160,87 @@
                 </div>
             </div>
         </section>
-        <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor temporibus laboriosam a error. Facere dolores, totam, iste
-            unde corporis labore enim ipsum dolore harum, numquam consequatur beatae ut et nihil.
+        <section id="habilidades" class="section-container">
+            <div class="skills container clearfix">
+                <h2 class="section__title">Habilidades</h2>
+                <div class="skills-col">
+                    <div class="skills-col__left">
+                        <div class="skills__item">
+                            <div class="skills__bar html">HTML5, CSS3, JS</div>
+                        </div>
+
+                        <div class="skills__item">
+                            <div class="skills__bar php">PHP</div>
+                        </div>
+
+                        <div class="skills__item">
+                            <div class="skills__bar db">Bases de datos</div>
+                        </div>
+
+                        <div class="skills__item">
+                            <div class="skills__bar bootstrap">Bootstrap</div>
+                        </div>
+
+                        <div class="skills__item">
+                            <div class="skills__bar scrum">SCRUM</div>
+                        </div>
+
+                        <div class="skills__item">
+                            <div class="skills__bar git">Git, GitHub & SourceTree</div>
+                        </div>
+
+                        <div class="skills__item">
+                            <div class="skills__bar devops">DevOps</div>
+                        </div>
+                    </div>
+                    <div class="skills-col__right">
+                        <div class="skills__item">
+                            <div class="skills__bar angular">Angular</div>
+                        </div>
+
+                        <div class="skills__item">
+                            <div class="skills__bar node">Node.js</div>
+                        </div>
+
+                        <div class="skills__item">
+                            <div class="skills__bar react">ReactJS</div>
+                        </div>
+
+                        <div class="skills__item">
+                            <div class="skills__bar cms">CMS</div>
+                        </div>
+
+                        <div class="skills__item">
+                            <div class="skills__bar teamwork">Teamwork</div>
+                        </div>
+
+                        <div class="skills__item">
+                            <div class="skills__bar design">Diseño web</div>
+                        </div>
+
+                        <div class="skills__item">
+                            <div class="skills__bar oop">OOP</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="section__breaker">
+            <div class="section__breaker-container">
+                <div class="section__breaker-item">
+                    <blockquote>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget leo nunc, nec tempus mi? Curabitur id nisl mi, ut vulputate
+                        urna. Quisque porta facilisis tortor, vitae bibendum velit fringilla vitae! Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. Mauris eget leo nunc, nec tempus mi? Curabitur id nisl mi, ut
+                        vulputate urna. Quisque porta facilisis tortor, vitae bibendum velit fringilla vitae!
+                        <cite>Somebody famous</cite>
+                    </blockquote>
+                </div>
+            </div>
         </div>
-        <section style="background-color:gray; height: 150px;" class="section-container"></section>
-        <section class="section-container">
+        <section id="contacto" class="section-container">
             <div class="container">
+                <h2 class="section__title">Ponte en marcha</h2>
                 <form name="contact" method="get" class="form__contact">
                     <div class="form-col">
                         <div class="form-col__left">
@@ -185,7 +274,8 @@
                     </div>
                     <div class="form-row__button">
                         <button type="submit" id="enviar" class="form-button">
-                            <span class="reverse__font">E</span>nvi<span class="reverse__font">a</span>r
+                            <span class="reverse__font">E</span>nvi
+                            <span class="reverse__font">a</span>r
                         </button>
                     </div>
                 </form>
