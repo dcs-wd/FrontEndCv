@@ -185,6 +185,21 @@ body {
   max-width: 50%;
 }
 
+.hobbies {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #25303b;
+}
+
+.hobbies > .hobbies-item {
+  font-size: 40px;
+  margin: 15px 15px;
+}
+
 .knowledge {
   display: flex;
   flex-flow: row nowrap;
@@ -508,6 +523,7 @@ body {
   line-height: 40px;
   color: white;
   font-family: Montserrat;
+  animation: skillsBarsAnimation 3s forwards;
 }
 
 .skills > .skills-col .skills__item > .html {
@@ -589,4 +605,81 @@ body {
   padding: 5px 0;
   background-color: #333;
   color: #fff;
+}
+
+@keyframes skillsBarsAnimation {
+  0% {
+    width: 1;
+  }
+  100% {
+    .skills > .skills-col .skills__item > .html {
+      width: 90%;
+      background-color: #00d172;
+    }
+
+    .skills > .skills-col .skills__item > .php {
+      width: 87%;
+      background-color: #777bb4;
+    }
+
+    .skills > .skills-col .skills__item > .db {
+      width: 78%;
+      background-color: #a33639;
+    }
+
+    .skills > .skills-col .skills__item > .bootstrap {
+      width: 78%;
+      background-color: #614789;
+    }
+
+    .skills > .skills-col .skills__item > .scrum {
+      width: 81%;
+      background-color: #6db74d;
+    }
+
+    .skills > .skills-col .skills__item > .git {
+      width: 85%;
+      background-color: #f54d27;
+    }
+
+    .skills > .skills-col .skills__item > .devops {
+      width: 55%;
+      background-color: #0d2c40;
+    }
+
+    .skills > .skills-col .skills__item > .angular {
+      width: 35%;
+      background-color: #dd0031;
+    }
+
+    .skills > .skills-col .skills__item > .node {
+      width: 45%;
+      background-color: #83cd29;
+    }
+
+    .skills > .skills-col .skills__item > .react {
+      width: 35%;
+      background-color: #53c1de;
+    }
+
+    .skills > .skills-col .skills__item > .cms {
+      width: 60%;
+      background-color: #464646;
+    }
+
+    .skills > .skills-col .skills__item > .teamwork {
+      width: 96%;
+      background-color: #1cd4c6;
+    }
+
+    .skills > .skills-col .skills__item > .design {
+      width: 70%;
+      background-color: #fed136;
+    }
+
+    .skills > .skills-col .skills__item > .oop {
+      width: 75%;
+      background-color: #1f6385;
+    }
+  }
 }

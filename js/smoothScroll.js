@@ -89,8 +89,10 @@ var acumulativeOffset = function(element) {
 };
 
 var quienSoyOffset = acumulativeOffset(document.getElementById("quien-soy"));
-var equipoOffset = acumulativeOffset(document.getElementById("equipo"));
-var transporteOffset = acumulativeOffset(document.getElementById("transporte"));
+var estudioOffset = acumulativeOffset(document.getElementById("estudios"));
+var expOffset = acumulativeOffset(document.getElementById("experiencia"));
+var skillsOffset = acumulativeOffset(document.getElementById("habilidades"));
+var contactoOffset = acumulativeOffset(document.getElementById("contacto"));
 
 window.addEventListener("scroll", changeMenuStyle);
 
@@ -105,10 +107,7 @@ function changeMenuStyle(event) {
     } else {
       return false;
     }
-
-    deleteActiveClass();
-    setActiveItem("a[href='#']");
-  } else if (pageOffset >= quienSoyOffset && pageOffset < equipoOffset) {
+  } else if (pageOffset >= quienSoyOffset && pageOffset < estudioOffset) {
     if (!previous || previous !== 2) {
       previous = 2;
     } else {
@@ -117,7 +116,7 @@ function changeMenuStyle(event) {
 
     deleteActiveClass();
     setActiveItem("a[href$='quien-soy']");
-  } else if (pageYOffset >= equipoOffset && pageYOffset < transporteOffset) {
+  } else if (pageYOffset >= estudioOffset && pageYOffset < expOffset) {
     if (!previous || previous !== 3) {
       previous = 3;
     } else {
@@ -125,7 +124,34 @@ function changeMenuStyle(event) {
     }
 
     deleteActiveClass();
-    setActiveItem("a[href$='equipo']");
+    setActiveItem("a[href$='estudios']");
+  } else if (pageYOffset >= expOffset && pageYOffset < skillsOffset) {
+    if (!previous || previous !== 3) {
+      previous = 3;
+    } else {
+      return false;
+    }
+
+    deleteActiveClass();
+    setActiveItem("a[href$='experiencia']");
+  } else if (pageYOffset >= skillsOffset && pageYOffset < contactoOffset) {
+    if (!previous || previous !== 3) {
+      previous = 3;
+    } else {
+      return false;
+    }
+
+    deleteActiveClass();
+    setActiveItem("a[href$='habilidades']");
+  } else if (pageYOffset >= contactoOffset) {
+    if (!previous || previous !== 3) {
+      previous = 3;
+    } else {
+      return false;
+    }
+
+    deleteActiveClass();
+    setActiveItem("a[href$='contacto']");
   }
 }
 
