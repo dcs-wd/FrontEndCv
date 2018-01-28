@@ -21,6 +21,10 @@
 .form__contact > .form-col > .form-col__left > .form-row > input[type="radio"] {
   margin-right: 30px;
 }
+.form__contact > .form-col > .form-col__left > .form-row #other {
+  margin-top: 5px;
+  display: none;
+}
 
 .form__contact
   > .form-col
@@ -67,6 +71,12 @@ input[type="email"] {
   box-sizing: border-box;
   margin-bottom: 16px;
   resize: vertical;
+}
+
+.form__contact > .form-col > .form-col__right > .form-row > .word__counter {
+  font-size: 12px;
+  text-align: right;
+  color: #ddd;
 }
 
 .form__contact > .form-row__button {
